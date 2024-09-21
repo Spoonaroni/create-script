@@ -12,7 +12,28 @@ read num
 ones=1
 tens=0
 c=1
-
+if [ $n -eq 0 ]
+then
+	if test -e "exercises"
+	then
+		echo "exercises/ exists"
+		cd exercises
+	else
+		echo "exercises/ does not exist"
+		mkdir exercises
+		cd exercises
+	fi
+else
+	if test -e "projects"
+	then
+		echo "projects/ exists"
+		cd projects
+	else
+		echo "projects/ does not exist"
+		mkdir projects
+		cd projects
+	fi
+fi
 while [ "$tens$ones" -le "$num" ];
 do
 	if test -e "$tens$ones"; 
