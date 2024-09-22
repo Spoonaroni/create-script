@@ -65,15 +65,15 @@ do
 
 
 
-			## Solution" >> README.md
+## Solution" >> README.md
 			echo "#include <stdio.h>
 
-			int main(void)
-			{
-				
+int main(void)
+{
 
-				return 0;
-			}" >> $c.c
+
+	return 0;
+}" >> $c.c
 			cd ../
 		fi
 	fi
