@@ -54,14 +54,14 @@ do
 		echo "$tens$ones/README.md does not exist"
 		if [ $n -eq 0 ];
 		then
-			echo "## Exercise $chap.$tens$ones
+			echo "# Exercise $chap.$tens$ones
 
 
 
 ## Solution" >> README.md
 			cd ../
 		else
-			echo "## Project $chap.$tens$ones
+			echo "# Project $chap.$tens$ones
 
 
 
